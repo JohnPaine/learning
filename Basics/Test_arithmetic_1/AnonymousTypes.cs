@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test_arithmetic_1
 {
-    class AnonymousTypes_1
+    class AnonymousTypes
     {
         public static void Run_Tests() {
             test_1();

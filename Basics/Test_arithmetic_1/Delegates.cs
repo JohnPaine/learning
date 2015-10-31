@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Test_arithmetic_1
 {
-    class Delegates_1
+    class Delegates
     {
         public static void Run_Tests()
         {

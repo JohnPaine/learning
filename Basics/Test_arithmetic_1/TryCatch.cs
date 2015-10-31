@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Test_arithmetic_1
 {
-    class Try_Catch_1
+    class TryCatch
     {
         public static void Run_Tests() {
             //System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");

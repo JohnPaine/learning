@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test_arithmetic_1
 {
-    class Overloading_1
+    class Overloading
     {
         public static void Run_Tests() {
             test_1();

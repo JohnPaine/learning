@@ -62,7 +62,7 @@ namespace Test_arithmetic_1
         }
     }
 
-    class ExtensionMethods_1
+    class ExtensionMethods
     {
         public static void Run_Tests() {
             //test_1();

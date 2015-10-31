@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test_arithmetic_1
 {
-    class Test_inheritance_1
+    class TestInheritance
     {
         public static void Run_Tests() {
             //tstInheritance1();

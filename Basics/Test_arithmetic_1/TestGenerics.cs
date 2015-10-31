@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test_arithmetic_1
 {
-    class Test_generics_1
+    class TestGenerics
     {
         public static void Run_Tests()
         {
