@@ -41,18 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnonymousTypes_1.cs" />
-    <Compile Include="Delegates_1.cs" />
-    <Compile Include="ExtensionMethods_1.cs" />
-    <Compile Include="Iterators_1.cs" />
-    <Compile Include="Lambdas_1.cs" />
-    <Compile Include="Overloading_1.cs" />
+    <Compile Include="AnonymousTypes.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Iterators.cs" />
+    <Compile Include="Lambdas.cs" />
+    <Compile Include="Overloading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Test_generics_1.cs" />
-    <Compile Include="Test_inheritance_1.cs" />
-    <Compile Include="Test_numerics.cs" />
-    <Compile Include="Try_Catch_1.cs" />
+    <Compile Include="TestGenerics.cs" />
+    <Compile Include="TestInheritance.cs" />
+    <Compile Include="TestNumerics.cs" />
+    <Compile Include="TryCatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

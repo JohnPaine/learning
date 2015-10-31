@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test_arithmetic_1
+namespace TestArithmetic
 {
-    class Test_inheritance_1
+    class TestInheritance
     {
         public static void Run_Tests() {
             //tstInheritance1();

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test_arithmetic_1
+namespace TestArithmetic
 {
     //Extension methods can only be declared in
     //non-generic, non-nested static class!!!
@@ -62,7 +62,7 @@ namespace Test_arithmetic_1
         }
     }
 
-    class ExtensionMethods_1
+    class ExtensionMethods
     {
         public static void Run_Tests() {
             //test_1();

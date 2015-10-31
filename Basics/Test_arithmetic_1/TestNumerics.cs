@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test_arithmetic_1
+namespace TestArithmetic
 {
-    class Test_numerics
+    class TestNumerics
     {
         static void split(string name, out string firstName, out string lastName)
         {

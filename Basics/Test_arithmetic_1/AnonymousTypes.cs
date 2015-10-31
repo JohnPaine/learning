@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test_arithmetic_1
+namespace TestArithmetic
 {
-    class AnonymousTypes_1
+    class AnonymousTypes
     {
         public static void Run_Tests() {
             test_1();
