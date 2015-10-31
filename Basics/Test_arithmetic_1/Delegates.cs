@@ -198,12 +198,17 @@ namespace TestArithmetic
             //another way!
             public event EventHandler<PriceChangedEventArgs> PriceChanged;
 
-            protected virtual void OnPriceChanged(object source, PriceChangedEventArgs e)
-            {
+            protected virtual void OnPriceChanged(object source, PriceChangedEventArgs e) {
                 EventHandler<PriceChangedEventArgs> handler = PriceChanged;
-                if (handler != null)
-                {
-                    handler(source, e);
+//                if (handler != null) {
+//                    handler(source, e);
+//                }
+//                the same as
+                try {
+                    handler?.Invoke (source, e);
+                }
+                catch (Exception exception) {
+                    // ignored
                 }
             }
         }
