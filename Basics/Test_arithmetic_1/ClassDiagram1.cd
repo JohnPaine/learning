@@ -1,76 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="TestArithmetic.AnonymousTypes" Collapsed="true">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Test_arithmetic_1.AnonymousTypes" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>AnonymousTypes.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.Delegates">
-    <Position X="9.5" Y="1" Width="1.5" />
+  <Class Name="Test_arithmetic_1.Delegates" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <NestedTypes>
-      <Delegate Name="TestArithmetic.Delegates.PriceChangedHandler" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Delegates.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Delegate Name="TestArithmetic.Delegates.Transformer" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Delegates.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Delegate Name="TestArithmetic.Delegates.Transformer2&lt;T&gt;" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Delegates.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Class Name="TestArithmetic.Delegates.PriceChangedEventArgs" Collapsed="true">
+      <Class Name="Test_arithmetic_1.Delegates.PriceChangedEventArgs" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Delegates.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
-      <Delegate Name="TestArithmetic.Delegates.Action&lt;T&gt;" Collapsed="true">
+      <Delegate Name="Test_arithmetic_1.Delegates.Func&lt;TResult&gt;" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Delegates.cs</NewMemberFileName>
         </TypeIdentifier>
       </Delegate>
-      <Class Name="TestArithmetic.Delegates.Stock" Collapsed="true">
+      <Class Name="Test_arithmetic_1.Delegates.Stock" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Delegates.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
-      <Delegate Name="TestArithmetic.Delegates.EventHandler&lt;TEventArgs&gt;" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Delegates.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Class Name="TestArithmetic.Delegates.X" Collapsed="true">
+      <Class Name="Test_arithmetic_1.Delegates.Util" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Delegates.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
-      <Class Name="TestArithmetic.Delegates.Util" Collapsed="true">
+      <Delegate Name="Test_arithmetic_1.Delegates.ProgressReporter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Delegates.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Test_arithmetic_1.Delegates.PriceChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Delegates.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Test_arithmetic_1.Delegates.EventHandler&lt;TEventArgs&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Delegates.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Test_arithmetic_1.Delegates.Action&lt;T&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Delegates.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Test_arithmetic_1.Delegates.Transformer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Delegates.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Test_arithmetic_1.Delegates.Printer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Delegates.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Test_arithmetic_1.Delegates.X" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Delegates.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
-      <Delegate Name="TestArithmetic.Delegates.ProgressReporter" Collapsed="true">
+      <Delegate Name="Test_arithmetic_1.Delegates.Func&lt;T, TResult&gt;" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Delegates.cs</NewMemberFileName>
         </TypeIdentifier>
       </Delegate>
-      <Delegate Name="TestArithmetic.Delegates.Printer" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Delegates.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Delegate Name="TestArithmetic.Delegates.Func&lt;T, TResult&gt;" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Delegates.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Delegate>
-      <Delegate Name="TestArithmetic.Delegates.Func&lt;TResult&gt;" Collapsed="true">
+      <Delegate Name="Test_arithmetic_1.Delegates.Transformer2&lt;T&gt;" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Delegates.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -81,62 +81,62 @@
       <FileName>Delegates.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.StringHelper">
-    <Position X="7.5" Y="2" Width="1.5" />
+  <Class Name="Test_arithmetic_1.StringHelper" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAACAAAAAAAAAAAQAAAAg=</HashCode>
       <FileName>ExtensionMethods.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.Test" Collapsed="true">
-    <Position X="4" Y="2.5" Width="1.5" />
+  <Class Name="Test_arithmetic_1.Test" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ExtensionMethods.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.Extensions">
-    <Position X="6" Y="4.5" Width="1.5" />
+  <Class Name="Test_arithmetic_1.Extensions" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ExtensionMethods.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.ObjectHelper" Collapsed="true">
+  <Class Name="Test_arithmetic_1.ObjectHelper" Collapsed="true">
     <Position X="4" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>ExtensionMethods.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.ExtensionMethods">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+  <Class Name="Test_arithmetic_1.ExtensionMethods" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>ExtensionMethods.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.Iterators" Collapsed="true">
+  <Class Name="Test_arithmetic_1.Iterators" Collapsed="true">
     <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIABAAAAAAAgAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>Iterators.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.Lambdas" Collapsed="true">
+  <Class Name="Test_arithmetic_1.Lambdas" Collapsed="true">
     <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAACAAAAAgAAEAAAA=</HashCode>
       <FileName>Lambdas.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.Overloading">
-    <Position X="11.25" Y="1.25" Width="1.5" />
+  <Class Name="Test_arithmetic_1.Overloading" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Struct Name="TestArithmetic.Overloading.Note" Collapsed="true">
+      <Struct Name="Test_arithmetic_1.Overloading.Note" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Overloading.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -147,39 +147,81 @@
       <FileName>Overloading.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.Program" Collapsed="true">
+  <Class Name="Test_arithmetic_1.Program" Collapsed="true">
     <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.TestGenerics" Collapsed="true">
-    <Position X="5.75" Y="2.5" Width="1.5" />
+  <Class Name="Test_arithmetic_1.TestGenerics" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>TestGenerics.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.TestInheritance" Collapsed="true">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+  <Class Name="Test_arithmetic_1.TestInheritance" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAACAAAAAAAAEgAAAgAAAAAAA=</HashCode>
       <FileName>TestInheritance.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.TestNumerics" Collapsed="true">
-    <Position X="2.25" Y="3.5" Width="1.5" />
+  <Class Name="Test_arithmetic_1.TestNumeric">
+    <Position X="12.25" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Test_arithmetic_1.TestNumeric.Test">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Class Name="Test_arithmetic_1.TestNumeric.Test.A" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>TestNumeric.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Test_arithmetic_1.TestNumeric.Test.B" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>TestNumeric.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Test_arithmetic_1.TestNumeric.Test.Bunny" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>TestNumeric.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Test_arithmetic_1.TestNumeric.Test.Sentence" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>TestNumeric.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>TestNumeric.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAIAFAAAAAAA=</HashCode>
-      <FileName>TestNumerics.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAIAFAAAAIAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>TestNumeric.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestArithmetic.TryCatch" Collapsed="true">
-    <Position X="4" Y="3.5" Width="1.5" />
+  <Class Name="Test_arithmetic_1.TryCatch" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>TryCatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Test_arithmetic_1.SomeClass">
+    <Position X="7.5" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAEAAAAAEAAAA=</HashCode>
+      <FileName>SomeClass.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TestArithmetic
+﻿namespace Test_arithmetic_1
 {
-    class AnonymousTypes
+    internal class AnonymousTypes
     {
-        public static void Run_Tests() {
-            test_1();
+        public static void Run_Tests () {
+            test_1 ();
         }
 
-        static void test_1() {
+        private static void test_1 () {
             var dude = new {Name = "Petia", Age = 15};
         }
     }
