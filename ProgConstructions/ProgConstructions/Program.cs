@@ -17,7 +17,12 @@ namespace ProgConstructions
             //Events.RunTests ();
             //Delegates.RunTests();
             //Lambdas.RunTests ();
-            Point.RunTests ();
+            //Point.RunTests ();
+            //Square.RunTests();
+            //Rectangle.RunTests();
+            //Extensions.RunTests();
+            //AnonymousTypes.RunTests();
+            LinqToObjects.RunTests();
         }
     }
 }

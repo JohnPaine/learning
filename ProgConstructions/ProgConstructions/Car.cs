@@ -76,5 +76,9 @@ namespace ProgConstructions
                 }
             }
         }
+
+        public override string ToString() {
+            return $"Car name - {CarName}, MaxSpeed - {MaxSpeed}";
+        }
     }
 }
