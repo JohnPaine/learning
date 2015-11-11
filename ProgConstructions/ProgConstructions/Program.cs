@@ -11,7 +11,13 @@ namespace ProgConstructions
         static void Main(string[] args) {
             //ParameterTypes.RunTests ();
             //Structures.RunTests ();
-            Classes.RunTests ();
+            //Classes.RunTests ();
+            //FunWithObservableCollection.RunTests ();
+            //Actions.RunTests ();
+            //Events.RunTests ();
+            //Delegates.RunTests();
+            //Lambdas.RunTests ();
+            Point.RunTests ();
         }
     }
 }

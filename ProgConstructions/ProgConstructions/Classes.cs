@@ -13,7 +13,6 @@ namespace ProgConstructions
     // internal classes are accessible only in current build
     internal static class Classes
     {
-
         /// <summary>
         /// Standard function for tests
         /// </summary>
@@ -23,15 +22,24 @@ namespace ProgConstructions
                 //SomeFun ();
                 //FunWithPoints ();
 
-                Rectangle r = new Rectangle {
-                    TopLeft = new Point {X = 1, Y = 2, Z = 3},
-                    BotRight = new Point { X = 4, Y = 5, Z = 6}
-                };
-                Console.WriteLine("Rectangle r = {0}", r.ToString ());
+                FunWithRectangles ();
             }
             catch (IOException e) {
                 Console.WriteLine (e);
             }
+        }
+
+        private static void FunWithRectangles () {
+            var r = new Rectangle {
+                TopLeft = new Point {X = 1, Y = 2, Z = 3},
+                BotRight = new Point {X = 4, Y = 5, Z = 6},
+                Height = 15,
+                Width = 17
+            };
+            Console.WriteLine ("\nRectangle r:\n{0}\n", r.ToString ());
+
+            var rClone = (Rectangle) r.Clone ();
+            Console.WriteLine ("\nRectangle rClone:\n{0}\n", rClone.ToString ());
         }
 
         private static void FunWithPoints () {
@@ -60,60 +68,6 @@ namespace ProgConstructions
             c2.Name = "Booba mazza fucka' bitch yobana nahuy bleat'!!1! !1";
 
             var c3 = new FunWithConstructors ("Bazooka", 27);
-        }
-
-        private class Rectangle
-        {
-            public Point TopLeft { get; set; }/* = new Point ();*/
-            public Point BotRight { get; set; }/* = new Point ();*/
-            public override string ToString () {
-                // using string interpolation!!!
-                return $"Top left point -  {TopLeft.ToString ()},\n" +
-                       $"Bottom right point - {BotRight.ToString ()}";
-            }
-        }
-
-        private class Point
-        {
-            // const fields can only be initialized at declaration. Const fields are implicitly static!!!
-            public const double Pi = 3.14;
-            // readonly fields can be initialized later, but only in class ctor!!! readonly fields are not implicitly static!!!
-            public readonly double Pi2;
-            // but they can be static
-            public static readonly double Pi3 = 3.14159;
-            // and also static readonly fields can be initialized later too, but only in static ctor!!
-            public static readonly double Pi4;
-
-            public int X { get; set; } = 0;
-            public int Y { get; set; } = 0;
-            public int Z { get; set; } = 0;
-
-            public override string ToString () {
-                // using string interpolation!!!
-                return $"X = {X}, Y = {Y}, Z = {Z}";
-            }
-
-            static Point () {
-                // static readonly field can be initialized later only in static ctor!!
-                Pi4 = 3.14159265;
-            }
-
-            public Point () {
-                Pi2 = 3.142;
-                Console.WriteLine ("Point Standard ctor!");
-            }
-
-            ~Point () {
-                Console.WriteLine("Point destructor for points - {0}", ToString ());
-            }
-
-            public Point (int x, int y, int z) {
-                Console.WriteLine ($"Point ctor with x = {x}, y = {y} and z = {z}");
-                X = x; 
-                Y = y;
-                Z = z;
-                Pi2 = 3.142;
-            }
         }
 
         private class FunWithConstructors
