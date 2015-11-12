@@ -55,6 +55,7 @@
     <Compile Include="LinqToObjects.cs" />
     <Compile Include="ParameterTypes.cs" />
     <Compile Include="Point.cs" />
+    <Compile Include="ProductInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangle.cs" />
