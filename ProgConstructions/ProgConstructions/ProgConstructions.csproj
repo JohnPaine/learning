@@ -52,6 +52,7 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="FunWithObservableCollection.cs" />
     <Compile Include="Lambdas.cs" />
+    <Compile Include="LazyInstantiation.cs" />
     <Compile Include="LinqToObjects.cs" />
     <Compile Include="ParameterTypes.cs" />
     <Compile Include="Point.cs" />

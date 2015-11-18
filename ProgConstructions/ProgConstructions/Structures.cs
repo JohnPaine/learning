@@ -42,6 +42,13 @@ namespace ProgConstructions
 
                 int?[] arrayOfNullableInts = new int?[10];  // the same as Nullable<int[]>;
                 //string? str = new string ();      // Error! string is already a Reference type!!!
+
+                int c  = new int();
+                c = 4;
+                Console.WriteLine(c);
+                int e;
+                e = 10;
+                Console.WriteLine(e);
             }
             catch (IOException e)
             {

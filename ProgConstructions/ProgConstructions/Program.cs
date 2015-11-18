@@ -22,7 +22,8 @@ namespace ProgConstructions
             //Rectangle.RunTests();
             //Extensions.RunTests();
             //AnonymousTypes.RunTests();
-            LinqToObjects.RunTests();
+            //LinqToObjects.RunTests();
+            LazyInstantiation.RunTests();
         }
     }
 }

@@ -14,27 +14,46 @@ namespace ProgConstructions
             //SimpleQueries2();
             //MSDNExample1();
 
-            GetNamesAndDescription(ProductInfo.GetStore()).PrintCollection();
-            AlphabetizeProducts(ProductInfo.GetStore()).PrintCollection();
-            GetDiff(ProductInfo.GetStore()).PrintCollection();
-            GetIntersect(ProductInfo.GetStore()).PrintCollection();
-            GetUnion(ProductInfo.GetStore()).PrintCollection();
+            //GetNamesAndDescription(ProductInfo.GetStore()).PrintCollection();
+            //AlphabetizeProducts(ProductInfo.GetStore()).PrintCollection();
+            //GetDiff(ProductInfo.GetStore()).PrintCollection();
+            //GetIntersect(ProductInfo.GetStore()).PrintCollection();
+            //GetUnion(ProductInfo.GetStore()).PrintCollection();
+            try {
+                //GetProductsWithEnumerableAndLambdas(ProductInfo.GetStore()).PrintCollection();
+                GetProductsWithEnumerableAndLambdas_2(ProductInfo.GetStore()).PrintCollection();
+            }
+            catch (Exception exception) {
+                Console.WriteLine(exception);
+            }
+        }
+
+        private static Array GetProductsWithEnumerableAndLambdas_2(IEnumerable<ProductInfo> products) {
+            Console.WriteLine("\n********** Get Strings With Enumerable And Lambdas: **********\n");
+            var subset =
+                products.Where(product => product.NumberInStock >= 100 && product.NumberInStock < 120)
+                    .OrderBy(product => product.NumberInStock)
+                    .Select(product => product);
+            return subset.ToArray();
+        }
+
+        private static Array GetProductsWithEnumerableAndLambdas(IEnumerable<ProductInfo> products) {
+            Console.WriteLine("\n********** Get Strings With Enumerable And Lambdas: **********\n");
+            var subset =
+                products.Where(product => product.Name.Contains("coffee"))
+                    .OrderBy(product => product.Name)
+                    .Select(product => product);
+            return subset.ToArray();
         }
 
         private static Array GetDeficientItems(IEnumerable<ProductInfo> products) {
-            Console.WriteLine("\n********** Deficient items are: **********\n");
-            var deficit = from item in products where item.NumberInStock <= 100 select item.Name;
-            var enumerable = deficit as string[] ?? deficit.ToArray();
-            enumerable.PrintCollection();
-            return enumerable.ToArray();
+            var deficit = from item in products where item.NumberInStock <= 100 select item;
+            return deficit.ToArray();
         }
 
         private static Array GetExceededItems(IEnumerable<ProductInfo> products) {
-            Console.WriteLine("\n********** Exceeded items are: **********\n");
-            var exceeded = from item in products where item.NumberInStock >= 100 select item.Name;
-            var enumerable = exceeded as string[] ?? exceeded.ToArray();
-            enumerable.PrintCollection();
-            return enumerable.ToArray();
+            var exceeded = from item in products where item.NumberInStock >= 100 select item;
+            return exceeded.ToArray();
         }
 
         private static Array GetUnion(IEnumerable<ProductInfo> products) {
@@ -42,7 +61,9 @@ namespace ProgConstructions
             var productInfos = products as ProductInfo[] ?? products.ToArray();
             var deficient = GetDeficientItems(productInfos);
             var exceeded = GetExceededItems(productInfos);
-            var diff = (from item in deficient.OfType<ProductInfo>() select item).Union(from item2 in exceeded.OfType<ProductInfo>() select item2);
+            var diff =
+                (from item in deficient.OfType<ProductInfo>() select item).Union(
+                    from item2 in exceeded.OfType<ProductInfo>() select item2);
             return diff.ToArray();
         }
 
@@ -51,7 +72,9 @@ namespace ProgConstructions
             var productInfos = products as ProductInfo[] ?? products.ToArray();
             var deficient = GetDeficientItems(productInfos);
             var exceeded = GetExceededItems(productInfos);
-            var diff = (from item in deficient.OfType<ProductInfo>() select item).Intersect(from item2 in exceeded.OfType<ProductInfo>() select item2);
+            var diff =
+                (from item in deficient.OfType<ProductInfo>() select item).Intersect(
+                    from item2 in exceeded.OfType<ProductInfo>() select item2);
             return diff.ToArray();
         }
 
@@ -60,7 +83,9 @@ namespace ProgConstructions
             var productInfos = products as ProductInfo[] ?? products.ToArray();
             var deficient = GetDeficientItems(productInfos);
             var exceeded = GetExceededItems(productInfos);
-            var diff = (from item in deficient.OfType<ProductInfo>() select item).Except(from item2 in exceeded.OfType<ProductInfo>() select item2);
+            var diff =
+                (from item in deficient.OfType<ProductInfo>() select item).Except(
+                    from item2 in exceeded.OfType<ProductInfo>() select item2);
             return diff.ToArray();
         }
 
