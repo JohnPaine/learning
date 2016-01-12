@@ -1,0 +1,25 @@
+﻿@model System.Collections.Generic.List<LessonProject.Model.User>
+
+@{
+    ViewBag.Title = "Users";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @foreach (var user in Model)
+    {
+        <div class="item">
+            <span class="id">
+                @user.ID
+            </span>
+            <span class="email">
+                @user.Email
+            </span>
+            <span class="AddedDate">
+                @user.AddedDate
+            </span>
+        </div>
+    }
+</p>

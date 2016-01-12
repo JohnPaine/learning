@@ -1,0 +1,24 @@
+﻿@model System.Collections.Generic.List<LessonProject.Model.Role>
+
+@{
+    ViewBag.Title = "Roles";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @foreach (var role in Model) {
+        <div class="item">
+            <span class="id">
+                @role.ID
+            </span>
+            <span class="name">
+                @role.Name
+            </span>
+            <span class="Code">
+                @role.Code
+            </span>
+        </div>
+    }
+</p>

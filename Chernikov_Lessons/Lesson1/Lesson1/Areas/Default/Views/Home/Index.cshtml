@@ -1,0 +1,20 @@
+﻿@model Lesson1.Models.IWeapon
+@{
+    ViewBag.Title = "Lesson project";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3>
+    @*Warrior message - @ViewBag.WarriorMessage;*@
+    @Model.Kill()
+</h3>
+
+<p>
+    <div class="menu">
+        <a href="@Url.Action("Index", "Role")">Roles</a>
+        @Html.ActionLink("Users", "Index", "User")
+    </div>
+</p>
+
