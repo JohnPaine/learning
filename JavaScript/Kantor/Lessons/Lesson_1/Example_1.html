@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<p>Начало документа...</p>
+<script>
+    //    alert('Hello!');    // " == '
+    //    alert("Hello!");    // " == '
+
+    //    alert("typeof undefined - " + typeof undefined);
+    //    alert("typeof 0 - " + typeof 0);
+    //    alert("typeof true - " + typeof true);
+    //    alert("typeof \"foo\" - " + typeof "foo");
+    //    alert("typeof \'foo\' - " + typeof 'foo');
+    //    alert("typeof {} - " + typeof {});
+    //    alert("typeof null is a known error in language - " + typeof null);
+    //    alert("typeof function(){} - " + typeof function(){});
+    //    alert("typeof [] - " + typeof []);
+    //    alert( '1' + 2 ); // "12"
+    //    alert( 2 + '1' ); // "21"
+    //    alert( 2 - '1' ); // 1
+    //    alert( 6 / '2' ); // 3
+
+    // унарный + преобразует строку в число!
+    //    var apples = "2";
+    //    var oranges = "3";
+    //
+    //    alert( typeof (apples + oranges) ); // "23", так как бинарный плюс складывает строки
+    //
+    //    var apples = "2";
+    //    var oranges = "3";
+    //
+    //    alert( typeof (+apples + +oranges) ); // 5, число, оба операнда предварительно преобразованы в числа
+
+    //    var a = 1;
+    //    var b = 2;
+    //
+    //    var c = 3 - (a = b + 1);
+    //
+    //    alert( a ); // 3
+    //    alert( c ); // 0
+    //    var i = 1;
+    //    alert( 2 * ++i ); // 4
+    //
+    //    i = 1;
+    //    alert( 2 * i++ ); // 2
+
+    //    var a = (5, 6);
+    //
+    //    alert( a );
+
+    //    alert("2" > "14"); // true, неверно, ведь 2 не больше 14
+    //    alert(+"2" > +"14"); // false, теперь правильно
+    //    alert('2' > 1); // true, сравнивается как 2 > 1
+    //    alert('01' == 1); // true, сравнивается как 1 == 1
+    //    alert(false == 0); // true, false становится числом 0
+    //    alert(true == 1); // true, так как true становится числом 1.
+
+    // В обычном операторе == есть «проблема» — он не может отличить 0 от false:
+    //    alert( 0 == false ); // true
+    // Та же ситуация с пустой строкой:
+    //    alert( '' == false ); // true
+    // Для проверки равенства без преобразования типов используются операторы строгого равенства === (тройное равно) и !==.
+    // Если тип разный, то они всегда возвращают false:
+    //    alert( 0 === false ); // false, т.к. типы различны
+
+    // null and undefined
+
+    // Значения null и undefined равны == друг другу и не равны чему бы то ни было ещё. Это жёсткое правило буквально прописано в спецификации языка.
+    // При преобразовании в число null становится 0, а undefined становится NaN.
+    //    alert(null > 0); // false
+    //    alert(null == 0); // false
+    //    alert(null >= 0); // true
+    // Сравнение честно приводит к числу, получается ноль. А при проверке равенства значения null и undefined обрабатываются особым образом: они равны друг другу, но не равны чему-то ещё.
+
+    // Значение undefined вообще нельзя сравнивать:
+    alert(undefined > 0); // false (1)
+    alert(undefined < 0); // false (2)
+    alert(undefined == 0); // false (3)
+    // Сравнения (1) и (2) дают false потому, что undefined при преобразовании к числу даёт NaN.
+    // А значение NaN по стандарту устроено так, что сравнения ==, <, >, <=, >= и даже === с ним возвращают false.
+    // Проверка равенства (3) даёт false, потому что в стандарте явно прописано, что undefined равно лишь null и ничему другому.
+
+</script>
+<p>Конец документа...</p>
+</body>
+</html>
