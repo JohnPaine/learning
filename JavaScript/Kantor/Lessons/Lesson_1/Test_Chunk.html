@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Chunk function</title>
+
+
+    <!-- подключаем стили Mocha, для отображения результатов -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.3.4/mocha.css">
+    <!-- подключаем библиотеку Mocha -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.3.4/mocha.js"></script>
+    <!-- настраиваем Mocha: предстоит BDD-тестирование -->
+    <script>
+        mocha.setup('bdd');
+    </script>
+
+    <!-- подключаем chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.4.1/chai.js"></script>
+    <!-- в chai есть много всего, выносим assert в глобальную область -->
+    <script>
+        var assert = chai.assert;
+    </script>
+</head>
+<body>
+
+<h3>Chunk Tests</h3>
+<script src="JS/Chunk.js"></script>
+
+<!-- в этом скрипте находятся спеки -->
+<script src="JS/Tests/Test_Chunk.js"></script>
+
+<!-- в элементе с id="mocha" будут результаты тестов -->
+<div id="mocha"></div>
+
+<!-- запустить тесты! -->
+<script>
+    mocha.run();
+</script>
+
+<h3>Tests finished</h3>
+</body>
+</html>
