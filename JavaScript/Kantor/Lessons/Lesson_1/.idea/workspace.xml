@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8950d6-4727-497d-bcfc-285e2dd1c85b" name="Default" comment="">
+<<<<<<< HEAD
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GC.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/GC.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/Modules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Modules.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Lesson_1.iml" afterPath="$PROJECT_DIR$/.idea/Lesson_1.iml" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Lesson_1.iws" />
@@ -67,7 +76,11 @@
         <entry file="file://$PROJECT_DIR$/JS/Closures.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="238" column="22" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
+=======
+              <caret line="213" column="31" selection-start-line="213" selection-start-column="31" selection-end-line="213" selection-end-column="31" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
               <folding>
                 <element signature="n#!!doc;n#makeCounter#0" expanded="false" />
               </folding>
@@ -75,21 +88,59 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Example_2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Example_2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="GC.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS/GC.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.303233">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GC.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GC.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Example_3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Example_3.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.76119405">
               <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+=======
+      <file leaf-file-name="Modules.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/Modules.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modules.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
               <folding />
             </state>
           </provider>
@@ -115,7 +166,14 @@
         <option value="$PROJECT_DIR$/JS/Closures.html" />
         <option value="$PROJECT_DIR$/Closures.html" />
         <option value="$PROJECT_DIR$/JS/Closures.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Example_3.html" />
+=======
+        <option value="$PROJECT_DIR$/Modules.html" />
+        <option value="$PROJECT_DIR$/JS/Modules.js" />
+        <option value="$PROJECT_DIR$/GC.html" />
+        <option value="$PROJECT_DIR$/JS/GC.js" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
       </list>
     </option>
   </component>
@@ -137,7 +195,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -156,6 +214,10 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -190,7 +252,10 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,7 +367,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -341,13 +408,22 @@
     <entry file="file://$PROJECT_DIR$/JS/Closures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="238" column="22" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
           <folding>
             <element signature="n#!!doc;n#makeCounter#0" expanded="false" />
+=======
+          <caret line="213" column="31" selection-start-line="213" selection-start-column="31" selection-end-line="213" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc;n#makeCounter#0" expanded="false" />
+            <marker date="1452617216842" expanded="true" signature="3016:3122" placeholder="..." />
+            <marker date="1452617216842" expanded="true" signature="3165:3430" placeholder="..." />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Example_2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -376,26 +452,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/JS/GC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GC.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Examples.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+=======
+    <entry file="file://$PROJECT_DIR$/JS/Modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Closures.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+=======
+    <entry file="file://$PROJECT_DIR$/Modules.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/JS/Closures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -406,6 +513,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
     <entry file="file://$PROJECT_DIR$/Tests.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -444,6 +553,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#makeCounter#0" expanded="false" />
+<<<<<<< HEAD
+=======
+            <marker date="1452617216842" expanded="true" signature="3016:3122" placeholder="..." />
+            <marker date="1452617216842" expanded="true" signature="3165:3430" placeholder="..." />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
           </folding>
         </state>
       </provider>
@@ -504,29 +618,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Modules.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/Modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JS/Closures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="238" column="22" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
+=======
+          <caret line="213" column="31" selection-start-line="213" selection-start-column="31" selection-end-line="213" selection-end-column="31" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
           <folding>
             <element signature="n#!!doc;n#makeCounter#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Example_2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/GC.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Example_3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76119405">
           <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/JS/GC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.303233">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+>>>>>>> 3dd4ae65e10d4acb40ed0b65c726beeb44ca3eda
         </state>
       </provider>
     </entry>
