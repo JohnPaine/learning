@@ -26,24 +26,24 @@ describe("chunk", function () {
         //    }
         //}
         it('chunk(["a", "b", "c", "d"], 2) should return [["a", "b"], ["c", "d"]]', function() {
-            alert(chunk(["a", "b", "c", "d"], 2));
-            assert(chunk(["a", "b", "c", "d"], 2) == [["a", "b"], ["c", "d"]], 'chunk(["a", "b", "c", "d"], 2) != [["a", "b"], ["c", "d"]]');
+            result = JSON.stringify(chunk(["a", "b", "c", "d"], 2));
+            assert(result == JSON.stringify([["a", "b"], ["c", "d"]]), 'chunk(["a", "b", "c", "d"], 2) != [["a", "b"], ["c", "d"]]');
         });
         it('chunk([0, 1, 2, 3, 4, 5], 3) should return [[0, 1, 2], [3, 4, 5]]', function() {
-            alert(chunk([0, 1, 2, 3, 4, 5], 3));
-            assert(chunk([0, 1, 2, 3, 4, 5], 3) == [[0, 1, 2], [3, 4, 5]], 'chunk([0, 1, 2, 3, 4, 5], 3) != [[0, 1, 2], [3, 4, 5]]');
+            result = JSON.stringify(chunk([0, 1, 2, 3, 4, 5], 3));
+            assert(result == JSON.stringify([[0, 1, 2], [3, 4, 5]]), 'chunk([0, 1, 2, 3, 4, 5], 3) != [[0, 1, 2], [3, 4, 5]]');
         });
         it('chunk([0, 1, 2, 3, 4, 5], 2) should return [[0, 1], [2, 3], [4, 5]]', function() {
-            assert(chunk([0, 1, 2, 3, 4, 5], 2) == [[0, 1], [2, 3], [4, 5]], 'chunk([0, 1, 2, 3, 4, 5], 2) != [[0, 1], [2, 3], [4, 5]]');
+            assert(JSON.stringify(chunk([0, 1, 2, 3, 4, 5], 2)) == JSON.stringify([[0, 1], [2, 3], [4, 5]]), 'chunk([0, 1, 2, 3, 4, 5], 2) != [[0, 1], [2, 3], [4, 5]]');
         });
         it('chunk([0, 1, 2, 3, 4, 5], 4) should return [[0, 1, 2, 3], [4, 5]]', function() {
-            assert(chunk([0, 1, 2, 3, 4, 5], 4) == [[0, 1, 2, 3], [4, 5]], 'chunk([0, 1, 2, 3, 4, 5], 4) != [[0, 1, 2, 3], [4, 5]]');
+            assert(JSON.stringify(chunk([0, 1, 2, 3, 4, 5], 4)) == JSON.stringify([[0, 1, 2, 3], [4, 5]]), 'chunk([0, 1, 2, 3, 4, 5], 4) != [[0, 1, 2, 3], [4, 5]]');
         });
         it('chunk([0, 1, 2, 3, 4, 5, 6], 3) should return [[0, 1, 2], [3, 4, 5], [6]]', function() {
-            assert(chunk([0, 1, 2, 3, 4, 5, 6], 3) == [[0, 1, 2], [3, 4, 5], [6]], 'chunk([0, 1, 2, 3, 4, 5, 6], 3) != [[0, 1, 2], [3, 4, 5], [6]]');
+            assert(JSON.stringify(chunk([0, 1, 2, 3, 4, 5, 6], 3)) == JSON.stringify([[0, 1, 2], [3, 4, 5], [6]]), 'chunk([0, 1, 2, 3, 4, 5, 6], 3) != [[0, 1, 2], [3, 4, 5], [6]]');
         });
         it('chunk([0, 1, 2, 3, 4, 5, 6, 7, 8], 4) should return [[0, 1, 2, 3], [4, 5, 6, 7], [8]]', function() {
-            assert(chunk([0, 1, 2, 3, 4, 5, 6, 7, 8], 4) == [[0, 1, 2, 3], [4, 5, 6, 7], [8]], 'chunk([0, 1, 2, 3, 4, 5, 6, 7, 8], 4) != [[0, 1, 2, 3], [4, 5, 6, 7], [8]]');
+            assert(JSON.stringify(chunk([0, 1, 2, 3, 4, 5, 6, 7, 8], 4)) == JSON.stringify([[0, 1, 2, 3], [4, 5, 6, 7], [8]]), 'chunk([0, 1, 2, 3, 4, 5, 6, 7, 8], 4) != [[0, 1, 2, 3], [4, 5, 6, 7], [8]]');
         });
     });
 
