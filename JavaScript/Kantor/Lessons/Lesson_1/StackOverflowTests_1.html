@@ -6,7 +6,32 @@
 </head>
 <body>
 
+<div>
+
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+
+<script>
+    $("div").append("<ul></ul>");
+    var x = new Array(10);
+    for (var i = 0; i < 10; i++) {
+        x[i] = new Array(20);
+        for (var j = 0; j < 20; ++j) {
+            x[i][j] = i + j;
+        }
+    }
+    for (var i = 0; i < 10; ++i) {
+        for (var j = 0; j < 20; ++j) {
+            var li = "\n<li>";
+            $("ul id='#" + i + "'").append(li.concat(x[i][j]));
+        }
+        $("ul").append("<ul></ul>");
+    }
+
+    console.log(document.getElementsByTagName('html')[0].innerHTML);
+
+</script>
 
 </body>
 </html>
