@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Rot-13</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+</head>
+<body>
+    <div></div>
+
+    <script src="JS/Rot-13.js"></script>
+    <script>
+
+        $("div").append("<ul></ul>");
+        for (var i = 0; i < 130; ++i) {
+            $("ul").append("<li>Char at "+ i + " - " + String.fromCharCode(i) + "</li>");
+        }
+    </script>
+</body>
+</html>
