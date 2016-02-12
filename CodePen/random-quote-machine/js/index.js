@@ -16,27 +16,10 @@ function openURL(url) {
     window.open(url, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
 }
 function getQuote() {
+    getImage();
     $.ajax({
-        //headers: {
-        //    //"X-Mashape-Key": "OivH71yd3tmshl9YKzFH7BTzBVRQp1RaKLajsnafgL2aPsfP9V",
-        //    Accept: "application/json",
-        //    "Content-Type": "application/x-www-form-urlencoded"
-        //},
-        //url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
         url: 'http://api.icndb.com/jokes/random',
         success: function (response) {
-            console.log(response);
-            //alert(response);
-            //alert(response.length);
-            //alert(1);
-            //var r = JSON.parse(response);
-            //currentQuote = r.quote;
-            //currentAuthor = r.author;
-            //alert(1);
-            //alert(r['value']['joke']);
-            //currentQuote = r.value.joke;
-
-            //alert();
             currentQuote = response['value']['joke'];
             if (response['value']['categories'].length > 0)
                 currentAuthor = response['value']['categories'][0];
@@ -74,6 +57,19 @@ function getQuote() {
             $(".button").animate({
                 backgroundColor: colors[color]
             }, 1000);
+        }
+    });
+}
+
+function getImage() {
+    var startAt = Math.floor(Math.random() * 100) % 10;
+    $.ajax({
+        url: 'https://www.googleapis.com/customsearch/v1?q=chuck+norris&cx=011807910143321447018:kzzgrfnwg_m&imgSize=large&imgType=photo&searchType=image&start=' + startAt + '&key=AIzaSyBwQ1PtGJNUPFI-v16HJ6pvPsbvxtbJAIc',
+        success: function (response) {
+            console.log(response);
+
+            $('#theImg').remove();
+            $('.quote-image').prepend('<img id="theImg" src="' + response["items"][0]["link"] + '" />')
         }
     });
 }
