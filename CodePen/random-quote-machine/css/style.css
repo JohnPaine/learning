@@ -12,7 +12,8 @@ div {
 }
 
 body {
-  background-color: #333;
+  background-image: url("http://lorempixel.com/1920/1080/nature");
+  transition: background 1s linear;
   color: #333;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -82,7 +83,7 @@ body {
 .quote-box .buttons .button:hover {
   opacity: 0.9;
 }
-.quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#tumblr-quote {
+.quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#share-google {
   float: left;
   padding: 0px;
   padding-top: 8px;

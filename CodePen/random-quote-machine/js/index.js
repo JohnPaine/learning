@@ -1,5 +1,5 @@
 /*
- Code by Gabriel Nunes
+ Code by John Shtefan
  */
 
 function inIframe() {
@@ -11,23 +11,24 @@ function inIframe() {
 }
 
 var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
-var currentQuote = 'abc', currentAuthor = 'Chuck Norris';
+var currentQuote = 'abc', currentAuthor = 'ICNDb';
 function openURL(url) {
     window.open(url, 'Share', 'width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0');
 }
-function getQuote() {
-    getImage();
+function getQuote(reload) {
+    if (typeof reload === "undefined")
+        reload = true;
     $.ajax({
         url: 'http://api.icndb.com/jokes/random',
         success: function (response) {
             currentQuote = response['value']['joke'];
+            currentQuote = currentQuote.replace(/&quot;/g, '\"');
             if (response['value']['categories'].length > 0)
                 currentAuthor = response['value']['categories'][0];
             if (inIframe()) {
                 $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
                     encodeURIComponent('"' + currentQuote + '" ' + currentAuthor));
-                $('#tumblr-quote').attr('href', 'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' +
-                    encodeURIComponent(currentAuthor) + '&content=' + encodeURIComponent(currentQuote));
+                $('share-google').attr('href', 'https://plus.google.com/share?url=http://codepen.io/JohnMPaine/full/rxqRxd/');
             }
             $(".quote-text").animate({
                     opacity: 0
@@ -50,40 +51,26 @@ function getQuote() {
                 });
 
             var color = Math.floor(Math.random() * colors.length);
-            $("html body").animate({
-                backgroundColor: colors[color],
-                color: colors[color]
-            }, 1000);
             $(".button").animate({
                 backgroundColor: colors[color]
             }, 1000);
+            if (reload)
+                window.location.reload();
         }
     });
 }
 
-function getImage() {
-    var startAt = Math.floor(Math.random() * 100) % 10;
-    $.ajax({
-        url: 'https://www.googleapis.com/customsearch/v1?q=chuck+norris&cx=011807910143321447018:kzzgrfnwg_m&imgSize=large&imgType=photo&searchType=image&start=' + startAt + '&key=AIzaSyBwQ1PtGJNUPFI-v16HJ6pvPsbvxtbJAIc',
-        success: function (response) {
-            console.log(response);
-
-            $('#theImg').remove();
-            $('.quote-image').prepend('<img id="theImg" src="' + response["items"][0]["link"] + '" />')
-        }
-    });
-}
 $(document).ready(function () {
-    getQuote();
+    getQuote(false);
     $('#new-quote').on('click', getQuote);
     $('#tweet-quote').on('click', function () {
         if (!inIframe()) {
             openURL('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + currentQuote + '" ' + currentAuthor));
         }
     });
-    $('#tumblr-quote').on('click', function () {
+    $('#share-google').on('click', function () {
         if (!inIframe()) {
-            openURL('https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' + encodeURIComponent(currentAuthor) + '&content=' + encodeURIComponent(currentQuote));
+            openURL('https://plus.google.com/share?url=http://codepen.io/JohnMPaine/full/rxqRxd/');
         }
     });
 });
