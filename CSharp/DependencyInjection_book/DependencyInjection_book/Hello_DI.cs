@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.IO;
+using System.Threading;
 
 namespace DependencyInjection_book
 {
@@ -25,8 +26,20 @@ namespace DependencyInjection_book
             }
         }
 
+        private static void Test_3()
+        {
+            try {
+                IMessageWriter writer = new SecureMessageWriter(new ConsoleMessageWriter());
+                var salutation = new Salutation(writer);
+                salutation.Exclaim();
+            }
+            catch (UnauthorizedAccessException e) {
+                Console.WriteLine(e);
+            }
+        }
+
         public static void RunTests () {
-            Test_2 ();
+            Test_3 ();
         }
 
         internal class Salutation
@@ -50,6 +63,24 @@ namespace DependencyInjection_book
             /// <exception cref="IOException">Произошла ошибка ввода-вывода. </exception>
             public void Write (string message) {
                 Console.WriteLine (message);
+            }
+        }
+
+        internal class SecureMessageWriter : IMessageWriter
+        {
+            private readonly IMessageWriter _writer;
+
+            public SecureMessageWriter(IMessageWriter writer) {
+                if (writer == null)
+                    throw new ArgumentNullException(nameof(writer));
+                _writer = writer;
+            }
+
+            public void Write(string message) {
+                if (Thread.CurrentPrincipal.Identity.IsAuthenticated)
+                    _writer.Write(message);
+                else
+                    throw new UnauthorizedAccessException("SecureMessageWriter");
             }
         }
 
