@@ -1,0 +1,12 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Featured Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@foreach (var product in this.Model.Products) {
+    <div>@Html.Encode(product.SummaryText)</div>
+}
