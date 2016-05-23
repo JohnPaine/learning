@@ -1,4 +1,4 @@
-# repo_net_1
+# learning
 
-Just an internal repository for my personal usage containing examples on different languages.
+Just an internal repository for personal usage containing samples on different languages.
 Created for educational needs only.
